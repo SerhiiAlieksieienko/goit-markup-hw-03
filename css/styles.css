@@ -126,8 +126,7 @@ a{
 /* #region Hero */
 .hero {
     background-color: #2e2f42;
-    padding-top: 181px;
-    padding-bottom: 195px;
+    padding: 188px 0;
 }
 .hero-container{
 
@@ -187,10 +186,12 @@ display: flex;
 
 .feat-list {
     display: flex;
-gap: 24px;
+ gap: 24px; 
+
 }
 
- .feat-item {
+ li .feat-item {
+    width: calc((100% - 72px) / 4);
     
     
 }
@@ -236,17 +237,20 @@ gap: 24px;
     gap: 24px;
    
 }
-.pht-team{
+.name-prof{
+    padding: 32px 0
+}
+/* .pht-team{
     margin-bottom: 32px;
-}
-.name-title{
-    margin-bottom: 8px;
-}
-.prof-info{
+} */
+
+/* .prof-info{
     margin-bottom: 32px;
-}
+} */
 .team-item {
+    border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
+    
 }
 
 .name-title {
@@ -256,6 +260,8 @@ gap: 24px;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        text-align: center;
+        margin-bottom: 8px;
 }
 
 .prof-info {
@@ -292,7 +298,10 @@ gap: 24px;
     column-gap: 24px;
 
 }
-
+.ttl-info{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+}
 .port-item {
     
 }
@@ -318,6 +327,7 @@ gap: 24px;
 
 /* #region Footer */
 .page-footer{
+    padding: 100px 0;
     background-color: #2e2f42;
 }
 .footer-container{
@@ -325,9 +335,10 @@ gap: 24px;
         align-items: center;
 }
 .footer-logo{
-    padding-top: 100px;
+    
     width: 115px;
     margin-bottom: 16px;
+    display: inline-block;
 }
 .footer-info{
     
@@ -337,6 +348,6 @@ gap: 24px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
-        padding-bottom: 100px;
+        
 }
 /* endregion */
